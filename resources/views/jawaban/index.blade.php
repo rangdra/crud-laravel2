@@ -3,7 +3,7 @@
 @section('content')
 
  <div class="container">
-   <h1> { pertanyaan_id }</h1>
+   <h1> {{ $jawaban->pertanyaan_id }}</h1>
    <form  method="POST" action="/jawaban/{pertanyaan_id}">
         @csrf
         <div class="form-group">

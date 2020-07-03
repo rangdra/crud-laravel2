@@ -18,4 +18,4 @@ Route::get('/master', function () {
 Route::get('/pertanyaan', 'PertanyaanController@index');
 Route::get('/pertanyaan/create', 'PertanyaanController@create');
 Route::post('/pertanyaan', 'PertanyaanController@store');
-Route::get('/jawaban/{id}', 'JawabanController@index');
+Route::get('/jawaban/{pertanyaan_id}', 'JawabanController@index');
